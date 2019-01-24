@@ -1,0 +1,401 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e9ebed;
+  font-family: 'Lucida Grande'; tahoma, Segoe UI, San Francisco, Roboto;
+}
+
+#barra {
+  height: 43px;
+  background-color: #5066ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+
+#Contenidor {
+  width: 852px;
+  height: 2000px;
+  background-color: #e9eaed;
+  margin: 0 auto;
+}
+#cap {
+  width: 852px;
+  height: 357px;
+  background-color: #ffffff;
+  background-image: url("../img/portada.jpg");
+  background-repeat: no-repeat;
+  background-size:852px 316px;
+  border: solid 1px #DDD;
+  border-radius: 2px;
+}
+
+#cap img {
+  width: 161px;
+  height: 161px;
+  position: relative;
+  top: 110px;
+  left: 20px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid white 4px;
+}
+
+#cap h2{
+  color: white;
+  position: relative;
+  top: 230px;
+  left: 200px;
+}
+
+#cap #menu{
+  background-color: #e9ebed;
+  height: 39px;
+  width: 590px;
+  float: right;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 249px;
+}
+#menu li{
+
+  height: 39px;
+  color: #5066ae;
+  background-color: #fff;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 15px;
+  margin: 0 1px 0 0;
+  line-height: 41px;
+}
+ #principal {
+   margin-top: 12px;
+   width: 516px;
+   height: 800px;
+   border: solid 1px #DDD;
+   border-radius: 2px;
+   background-color: #eaebed;
+   float: right;
+
+ }
+
+ #side {
+   margin-top: 12px;
+   width: 323px;
+   background-color: #eaebed;
+   height: 1000px;
+   border: solid 1px #DDD;
+   border-radius: 2px;
+}
+
+.post{
+  width: 492px;
+  padding: 12px;
+  height: 300px;
+  background-color: white;
+}
+
+.info {
+  width: 299px;
+  padding: 12px;
+  height: 300px;
+  background-color: white;
+}
+
+.post, .info {
+  border: 1px solid #DDD;
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+#d1{
+  width: 492px;
+  padding-top: 0;
+  font-size: 10px;
+}
+
+#d1 ul{
+    width: 492px;
+    padding-top: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+#ul1{
+  background-color: #f5f5f7;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -12px;
+}
+
+#d1 ul li{
+  float: left;
+  margin: 0;
+  padding: 12px;
+}
+
+#pensament{
+  clear: left;
+  padding: 12px;
+  height: 35px;
+  width: 400px;
+  position: relative;
+  left: -30px;
+  float: right;
+  border: 0;
+}
+
+#d1 #ul2{
+  height: 48px;
+  width: 516px;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  background-color: white;
+  position: relative;
+  left: -12px;
+  line-height: 35px;
+}
+
+#miniperfil{
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  position: relative;
+  top: 9px;
+  z-index: 1000;
+}
+
+#lapiz{
+list-style-type: none;
+list-style-image: url("../iconets/icones_lapiz.png");
+margin-right: 5px;
+font-size: 12px;
+}
+#camara{
+list-style-type: none;
+list-style-image: url("../iconets/icones_camara.png");
+font-size: 12px;
+margin-right: 5px;
+}
+#video{
+list-style-type: none;
+list-style-image: url("../iconets/icones_video.png");
+font-size: 12px;
+margin-right: 5px;
+}
+#bandera{
+list-style-type: none;
+list-style-image: url("../iconets/icones_bandera.png");
+font-size: 12px;
+margin-right: 5px;
+}
+#miniperfil{
+  padding: 12px;
+  z-index: 1000;
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+}
+#pensament{
+  float: right;
+  width: 350px;
+  height: 71px;
+  font-size: 1.1em;
+  border: 0;
+}
+}
+#botonera_estat{
+  height: 38px;
+  width: 516px;
+  background-color: #f5f5f7;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+}
+#botonera_estat li{
+  list-style: none;
+  height: 38px;
+  width: 516px;
+  background-color: #f5f5f7;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 12px;
+  position: relative;
+}
+
+
+#presentacion {
+  font-size: 12px;
+  width: 299px;
+  padding: 12px;
+  background-color: white;
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+#presentacion p {
+  border-bottom: solid 1px #DDD;
+}
+
+.estudios, .domicilio, .ubicacion, .estado {
+  list-style-type: none;
+}
+.estudios {
+  list-style-image: url("../iconets/icones_estudis.png");
+}
+
+.domicilio {
+  list-style-image: url("../iconets/icones_domicili.png");
+}
+
+.ubicacion {
+  list-style-image: url("../iconets/icones_ubicacio.png");
+}
+
+.estado {
+  list-style-image: url("../iconets/icones_sentimental.png");
+}
+
+#fotos {
+  height: 360px;
+  list-style-type: none;
+}
+
+#fotos ul{
+  list-style-type: none;
+  padding: 0;
+}
+#fotos li{
+  color: white;
+
+}
+
+.foto {
+  height: 95px;
+  width: 95px;
+  margin: 2px;
+  float: left;
+}
+#img1{
+  background-image: url("../img/img1.jpg");
+  background-size: cover;
+}
+
+#img2{
+  background-image: url("../img/img2.jpg");
+  background-size: cover;
+}
+#img3{
+  background-image: url("../img/img3.jpg");
+  background-size: cover;
+}
+#img4{
+  background-image: url("../img/img4.jpg");
+  background-size: cover;
+}
+#img5{
+  background-image: url("../img/img5.jpeg");
+  background-size: cover;
+}
+#img6{
+  background-image: url("../img/img6.jpeg");
+  background-size: cover;
+}
+#img7{
+  background-image: url("../img/img7.jpg");
+  background-size: cover;
+}
+#img8{
+  background-image: url("../img/img8.jpg");
+  background-size: cover;
+}
+#img9{
+  background-image: url("../img/img9.jpeg");
+  background-size: cover;
+}
+#amistad {
+  height: 360px;
+  list-style-type: none;
+}
+
+#amistad ul{
+  list-style-type: none;
+  padding: 0;
+}
+#amistad li{
+  color: white;
+
+}
+#amistad li a:link{
+  text-decoration: none;
+}
+
+#mm{
+  background-image: url("https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg");
+  background-size: cover;
+}
+#sw{
+  background-image: url("https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg");
+  background-size: cover;
+}
+#ag{
+  background-image: url("https://agarcia2019crn.github.io/M08/s2m8uf104_garciaa/img/perfil.jpg");
+  background-size: cover;
+}
+#np{
+  background-image: url("https://iprados2019crn.github.io/M08/s2m8uf104_iprados/img/fotoperfil.jpg");
+  background-size: cover;
+}
+#vh{
+  background-image: url("https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png");
+  background-size: cover;
+}
+#sp{
+  background-image: url("https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg");
+  background-size: cover;
+}
+#op{
+  background-image: url("https://oparicio2019crn.github.io/M08/UF1/s2m8uf104_oparicio/img/perfil.png");
+  background-size: cover;
+}
+#oc{
+  background-image: url("https://olopez2019crn.github.io/M08/s2m8uf0104_lopez/img/homero.png");
+  background-size: cover;
+}
+#ar{
+  background-image: url("https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg");
+  background-size: cover;
+}
+
+#sabias {
+  height: 192px;
+}
+#idiomas{
+  height: 165px;
+}
+
+#side h3 {
+  text-indent: 30px;
+  background-image: url("../img/lateral.png");
+  background-repeat: no-repeat;
+  background-position: 0 0px;
+  height: 24px;
+}
+
+#fotos h3 {
+  background-position: 0 -24px;
+}
+
+#amistad h3 {
+  background-position: 0 -48px;
+}
+
+#sabias h3 {
+  background-position: 0 -72px;
+}
