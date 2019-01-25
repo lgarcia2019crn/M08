@@ -1,0 +1,84 @@
+body {
+  width: auto;
+  background-color: #222;
+  font-family: 'Helvetica';
+  color: white;
+  padding: 5px;
+}
+
+#barra {
+
+  height: 50px;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+#barra_part1{
+list-style-type: none;
+display: inline;
+text-decoration: none;
+line-height: 50px;
+width: 100%;
+padding: 50px;
+}
+#barra_part2{
+  list-style-type: none;
+  display: inline-block;
+  float: right;
+  text-decoration: none;
+
+  padding: 50px;
+}
+#docint{
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+h1{
+  font-size:22px;
+  color: #FFF;
+}
+
+.documentals img{
+  border-radius: 5px;
+
+}
+
+.documentals{
+  width: 175px;
+  display: inline;
+  float: left;
+  margin: 10px;
+}
+
+h2{
+  font-size: 14px;
+  color: #CCC;
+  margin: 0;
+}
+h3{
+  font-size: 11px;
+  color: #CCC;
+  float: left;
+}
+h4{
+  font-size: 11px;
+  color: #CCC;
+  float: right;
+}
+
+#docvistos{
+  float: left;
+  width: 100%;
+  margin: 10px;
+}
+#quasinegre{
+  width: 175px;
+  height: 255px;
+}
