@@ -1,0 +1,100 @@
+*{
+  position: relative;
+}
+.mespel{
+  width: 700px;
+  height: 1000px;
+  background-color: #75533C;
+  margin:30px auto;
+  border-radius: 300px 300px 20px 20px;
+}
+.cap{
+  width: 500px;
+  height: 700px;
+  background-color: #E0BA96;
+  margin:30px auto;
+  border-radius: 400px 400px 500px 500px;
+
+}
+
+.esquerra{
+  float:left;
+}
+
+.dreta{
+  float:right;
+}
+
+.pel{
+  height: 175px;
+  background-color: #75533C;
+  border-radius: 200px 200px 0px 0px;
+
+}
+
+.front{
+
+  height: 50px;
+
+}
+
+.celles{
+  height: 50px;
+}
+
+.celles .cella{
+  width: 30%;
+  height: 30px;
+  margin: 5px;
+  background-color: #664D36;
+}
+
+.celles .cellae{
+  right: -40px;
+  border-radius: 50px 20px 30px 0px;
+}
+
+.celles .cellad{
+  left: -40px;
+  border-radius: 20px 50px 0px 30px;
+}
+
+.ulls{
+  height: 50px;
+}
+
+.ulls .blanc {
+  height: 60px;
+  width: 80px;
+  background-color: white;
+  border-radius: 200px 200px;
+}
+
+.ulls .ulle{
+  left: 70px;
+}
+.ulls .ulld{
+  right: 70px;
+}
+
+.ulls .iris{
+  background-image: radial-gradient(#75533C,#89703D);
+  height: 50px;
+  width: 50px;
+  border-radius: 100px 100px;
+  left: 15px;
+  top:5px;
+}
+
+.ulls .parpella{
+
+}
+
+.ulls .pupila{
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  border-radius: 100px 100px;
+  left: 13px;
+  top:13px;
+}
