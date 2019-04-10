@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/estils.css" rel="stylesheet" type="text/css" media="screen">
+  <title>Breathe</title>
+    <script type="text/javascript" src="prueva.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+ integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous">
+</script>
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$('#menu_on').click(function(){
+		   $('body').toggleClass('visible_menu');
+		 })
+	});
+</script>
+</script>
+</head>
+<body>
+  <div class="relleno1"></div>
+<div id="home">
+  <div class="logo"> <IMG src="img/logo.png" width="100%" height="100% "/></div>
+</div>
+<div class="relleno1"></div>
+<div class="relleno1"></div>
+
+
+
+
+
+
+
+<div id="playlist">
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+  <div class="list"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="album">
+  <h2>Albums</h2>
+  <div class="albums"> <IMG src="img/nirvana.jpg" width="220" height="220 "/> INNA - Nirvana</div>
+  <div class="albums"><IMG src="img/love.jpg" width="220" height="220"/> Lana del Rey - Love</div>
+  <div class="albums"><IMG src="img/fading.jpg" width="220" height="220"/> Alle Farben & Ilira - Fading</div>
+  <div class="albums"><IMG src="img/sucker.jpg" width="220" height="220"/> Jonas Brothers - Sucker</div>
+  <div class="albums"><IMG src="img/perfectilusion.jpg" width="220" height="220"/>Lady Gaga - Perfect Illusion</div>
+  <div class="albums"><IMG src="img/backtoyou.jpg" width="220" height="220"/>Selena Gomez - Back to you</div>
+  <div class="albums"><IMG src="img/breathin.jpg" width="220" height="220"/>Ariana Grande - Breathin</div>
+  <div class="albums"><IMG src="img/youdontownme.jpg" width="220" height="220"/>Grace - You don't own me</div>
+  <div class="albums"><IMG src="img/youngernow.jpg" width="220" height="220"/>Miley Cyrus - Younger Now</div>
+  <div class="albums"><IMG src="img/body.png" width="220" height="220"/>Loud Luxury - Body</div>
+  <div class="albums"><IMG src="img/imissyou.jpg" width="220" height="220"/>Clean Bandit - I miss you</div>
+  <div class="albums"><IMG src="img/thenights.jpg" width="220" height="220"/>
+    Avicii - The Nights</div>
+  <div class="relleno1"></div>
+  <div class="relleno1"></div>
+  <div class="relleno1"></div>
+  <div class="relleno1"></div>
+  <div class="relleno1"></div>
+  <div class="relleno1"></div>
+</div>
+
+
+
+
+
+
+
+
+<div id="track">
+
+  <div id="main">
+      <div id="image">
+          <img src="img/nirvana.jpg"/>
+      </div>
+      <div id="player">
+          <div id="songTitle"></div>
+          <div id="buttons">
+              <button id="pre" onclick="pre()"><img src="img/Pre.png" height="90%" width="90%"/></button>
+              <button id="play" onclick="playOrPauseSong()"><img src="img/Pause.png"/></button>
+              <button id="next" onclick="next()"><img src="img/Next.png" height="90%" width="90%"/></button>
+          </div>
+
+          <div id="seek-bar">
+              <div id="fill"></div>
+              <div id="handle"></div>
+          </div>
+      </div>
+  </div>
+
+<script>
+var songs = ["musica/nirvana.mp3","musica/love.mp3","musica/fading.mp3","musica/sucker.mp3","musica/perfectilusion.mp3","musica/backtoyou.mp3","musica/breathin.mp3","musica/youdontownme.mp3","musica/youngernow.mp3","musica/body.mp3","musica/imissyou.mp3","musica/thenights.mp3"];
+var poster = ["img/nirvana.jpg","img/love.jpg","img/fading.jpg","img/sucker.jpg","img/perfectilusion.jpg","img/backtoyou.jpg","img/breathin.jpg","img/youdontownme.jpg","img/youngernow.jpg","img/body.png","img/imissyou.jpg","img/thenights.jpg"];
+
+var songTitle = document.getElementById("songTitle");
+var fillBar = document.getElementById("fill");
+
+var song = new Audio();
+var currentSong = 0;    // it point to the current song
+
+window.onload = playSong;   // it will call the function playSong when window is load
+
+function playSong(){
+
+      song.src = songs[currentSong];  //set the source of 0th song
+
+      songTitle.textContent = songs[currentSong]; // set the title of song
+
+      song.play();    // play the song
+  }
+
+  function playOrPauseSong(){
+
+      if(song.paused){
+          song.play();
+          $("#play img").attr("src","img/Pause.png");
+      }
+      else{
+          song.pause();
+          $("#play img").attr("src","img/Play.png");
+      }
+  }
+
+  song.addEventListener('timeupdate',function(){
+
+      var position = song.currentTime / song.duration;
+
+      fillBar.style.width = position * 100 +'%';
+  });
+
+
+  function next(){
+
+      currentSong++;
+      if(currentSong > 11){
+          currentSong = 0;
+      }
+      playSong();
+      $("#play img").attr("src","img/Pause.png");
+      $("#image img").attr("src",poster[currentSong]);
+  }
+
+  function pre(){
+
+      currentSong--;
+      if(currentSong < 0){
+          currentSong = 11;
+      }
+      playSong();
+      $("#play img").attr("src","img/Pause.png");
+      $("#image img").attr("src",poster[currentSong]);
+  }
+
+</script>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="cabeza">
+<div id="wrapper">
+<header id="#header">
+  <a href="#" id="menu_on">
+    <span></span>
+    <span></span>
+    <span></span>
+  </a>
+  </header>
+  <nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#playlist">Playlist</a></li>
+    <li><a href="#album">Albums</a></li>
+    <li><a href="#track">Track</a></li>
+  </ul>
+</nav>
+</div>
+<div id="logo"> <IMG src="img/logo2.png" width="40px" height="40px"/></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
